@@ -1,0 +1,35 @@
+\chapter{Introdução}
+\Blindtext
+
+\section{Objetivos}
+
+\section{Organização}%Structure
+
+%%% REMOVER %%%
+\section{\LaTeX ~super introdução}
+Muito rapidamente, como usar o \LaTeX.
+
+\subsection{Citações}
+Para citar um autor, use o comando \verb|\cite{}| que gera $\rightarrow$ \cite{biswal1995}. 
+
+Caso queira usar o nome do autor no texto, use \verb|\citeonline{}| que gera $\rightarrow$ \citeonline{biswal1995}.
+
+% Este comando é do Abntex2
+Para citações longas: \verb|\begin{citacao}...\end{citacao}| que gera:
+
+\begin{citacao}
+	'' \blindtext ``
+\end{citacao}
+
+\subsection{Figuras/Quadros/Tabelas}
+A legenda em figuras, tabelas ou quadros, devem ficar por cima, enquanto a fonte fica por baixo. Exemplo na Figura \ref{f:ref-cruzada} abaixo:
+
+% [H] é pra forçar a figura a aparecer logo abaixo do texto. Pesquise por "floats placement" para entender melhor.
+\begin{figure}[H] 
+	\centering % centralizando
+	\caption{Exemplo de Figura}
+	\includegraphics[draft]{teste.png}
+	
+	Fonte: \cite{Raichle2011}.
+	\label{f:ref-cruzada}
+\end{figure}

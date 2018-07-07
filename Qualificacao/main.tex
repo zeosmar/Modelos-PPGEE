@@ -137,8 +137,8 @@ Para citações longas: \verb|\begin{citacao}...\end{citacao}| que gera:
 \subsection{Figuras/Quadros/Tabelas}
 A legenda em figuras, tabelas ou quadros, devem ficar por cima, enquanto a fonte fica por baixo. Exemplo na Figura \ref{f:ref-cruzada} abaixo:
 
-% [h!] é pra forçar a figura a aparecer logo abaixo do texto. Pesquise por "floats placement"
-\begin{figure}[h!] 
+% [H] é pra forçar a figura a aparecer logo abaixo do texto. Pesquise por "floats placement" para entender melhor.
+\begin{figure}[H] 
 \centering % centralizando
 \caption{Legenda}
 \includegraphics[draft]{teste.png}
@@ -179,16 +179,12 @@ Descreva aqui as considerações finais.
 Insira aqui o cronograma a ser seguido durante a realização do trabalho. Observe que esse cronograma deve contemplar o período de 1 ano de trabalho até o término do curso de mestrado, ou seja, os últimos 12 meses de trabalho do aluno.  
 
 \begin{quadro}[H]
-\label{q:tabela1}
-\centering
-\caption{Cronograma de atividades (últimos 12 meses).}
-\begin{figure}[H]
+    \label{q:tabela1}
     \centering
+    \caption{Cronograma de atividades (últimos 12 meses).}
     \includegraphics[width=5cm, height=5cm, draft]{CRONOGRAMA.PNG}
-    \label{fig:crono}
-    
+        
     Fonte: O Autor (2018)
-\end{figure}
 \end{quadro}
 
 \renewcommand{\bibsection}{\section{REFER\^ENCIAS}}
